@@ -42,6 +42,12 @@ body {
 .logo i {
     color: #007bff;
 }
+.no-results{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
 
 /* ===== SEARCH BOX ===== */
 .search-box {
