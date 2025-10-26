@@ -213,13 +213,25 @@ body {
 }
 
 /* ===== FOOTER ===== */
-footer {
+/*footer {
     text-align: center;
     padding: 15px;
     background: #fff;
     font-size: 0.9rem;
     box-shadow: 2px 0 6px #cccccc34;
     margin-top: auto;
+}*/
+footer {
+    position: fixed;  /* يثبت الفوتر */
+    bottom: 0;        /* آخر الصفحة */
+    left: 0;
+    width: 100%;      /* ياخد العرض كله */
+    text-align: center;
+    padding: 15px;
+    background: #fff;
+    font-size: 0.9rem;
+    box-shadow: 2px 0 6px #cccccc34;
+    z-index: 1000;    /* يظهر فوق كل المحتوى */
 }
 
 /* ===== DARK MODE ===== */
