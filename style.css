@@ -299,6 +299,13 @@ body.dark .close:hover {
     .icons-grid {
         grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
 }
+    .icons-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 25px;
+    justify-content: start;
+    max-width: 800px;
+}
 }
 
 @media (max-width: 480px) {
