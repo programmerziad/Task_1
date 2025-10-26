@@ -13,6 +13,7 @@ body {
     height: 100%;
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
 }
 
@@ -20,7 +21,7 @@ body {
 .main-header {
     display: flex;
     justify-content: space-between;
-  align-items: center;
+    align-items: center;
     padding: 15px 25px;
     background: #fff;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
@@ -41,7 +42,7 @@ body {
 .logo i {
     color: #007bff;
 }
-.no-results{
+.no-results p{
     display: flex;
     align-items: center;
     justify-content: center;
