@@ -10,7 +10,7 @@ body {
     background: #f8f9fa;
     color: #222;
     transition: 0.3s;
-    height: 100vh;
+    height: 100%;
     display: flex;
     align-items: centre;
     justify-content: center;
