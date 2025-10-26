@@ -10,10 +10,8 @@ body {
     background: #f8f9fa;
     color: #222;
     transition: 0.3s;
-    height: 100%;
+    height: 100vh;
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
 }
 
@@ -41,12 +39,6 @@ body {
 
 .logo i {
     color: #007bff;
-}
-.no-results p{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
 }
 
 /* ===== SEARCH BOX ===== */
@@ -219,25 +211,13 @@ body {
 }
 
 /* ===== FOOTER ===== */
-/*footer {
+footer {
     text-align: center;
     padding: 15px;
     background: #fff;
     font-size: 0.9rem;
     box-shadow: 2px 0 6px #cccccc34;
     margin-top: auto;
-}*/
-footer {
-    position: fixed;  /* يثبت الفوتر */
-    bottom: 0;        /* آخر الصفحة */
-    left: 0;
-    width: 100%;      /* ياخد العرض كله */
-    text-align: center;
-    padding: 15px;
-    background: #fff;
-    font-size: 0.9rem;
-    box-shadow: 2px 0 6px #cccccc34;
-    z-index: 1000;    /* يظهر فوق كل المحتوى */
 }
 
 /* ===== DARK MODE ===== */
@@ -317,10 +297,8 @@ body.dark .close:hover {
 }
 
     .icons-grid {
-        grid-template-columns: repeat(auto-fit, minmax(100px, auto));
-         justify-content: start;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
 }
-   
 }
 
 @media (max-width: 480px) {
