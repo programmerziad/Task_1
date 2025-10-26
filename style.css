@@ -12,8 +12,7 @@ body {
     transition: 0.3s;
     height: 100%;
     display: flex;
-    align-items: centre;
-    justify-content: center;
+    align-items: center;
     flex-direction: column;
 }
 
