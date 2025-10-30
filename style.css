@@ -282,7 +282,7 @@ body.dark .close {
 }
 
 body.dark .close:hover {
-  color: #fff;
+    color: #fff;
 }
 
 /* ===== RESPONSIVE ===== */
@@ -307,8 +307,8 @@ body.dark .close:hover {
     position: fixed;
     bottom: 25px;
     right: 25px;
-    background: var(--accent);
-    color: #fff;
+    background: #007bff;
+    color: #ffffff;
     border: none;
     border-radius: 50%;
     width: 45px;
