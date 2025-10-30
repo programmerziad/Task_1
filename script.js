@@ -78,6 +78,7 @@ const modalTitle = document.getElementById("modalTitle");
 const downloadBtn = document.getElementById("downloadBtn");
 const cancelBtn = document.getElementById("cancelBtn");
 const darkModeToggle = document.getElementById("darkModeToggle");
+const backToTop = document.getElementById("backToTop");
 
 let selectedIcon = null;
 
@@ -160,3 +161,15 @@ darkModeToggle.addEventListener("click", () => {
   darkModeToggle.classList.toggle("fa-moon", !isDark);
   darkModeToggle.classList.toggle("fa-sun", isDark);
 });
+
+window.addEventListener("scroll", () => {
+      if (window.scrollY > 40) {
+        backToTop.style.display = "flex";
+    } else {
+        backToTop.style.display = "none";
+    }
+    });
+
+    backToTop.addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    });
