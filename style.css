@@ -10,9 +10,9 @@ body {
     background: #f8f9fa;
     color: #222;
     transition: 0.3s;
-    height: 100vh;
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
 }
 
 /* ===== HEADER ===== */
@@ -27,7 +27,11 @@ body {
     top: 0;
     z-index: 1000;
 }
-
+.top-row {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
 .logo {
     display: flex;
     align-items: center;
@@ -288,14 +292,23 @@ body.dark .close:hover {
 /* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
     .main-header {
+        display: flex;
         flex-direction: column;
-        gap: 10px;
-}
+        align-items: center;
+        gap: 15px;
+    }
+
+    .top-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
 
     .search-box {
-        margin: 10px 0;
         width: 100%;
-}
+    }
+
 
     .icons-grid {
         grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
